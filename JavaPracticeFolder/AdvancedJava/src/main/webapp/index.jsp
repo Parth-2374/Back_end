@@ -48,6 +48,13 @@ h2{
 </style>
 </head>
 <body>
+	<div style="color :white; text-align:ceneter; border: 2px solid black; background-color: blue; " >
+	<%
+		if(request.getAttribute("msg")!=null){
+			out.println(request.getAttribute("msg"));
+		}
+	%>
+	</div>
 <form method="post" action="StudentController" class="container">
 	<table class="table table-borderless">
 			<h2 >Student Form</h2>
@@ -86,6 +93,10 @@ h2{
 		</tr>
 	</table>
 </form>
+<div style="color :white; align-content: center; border: 2px solid black; background-color: white; padding: 10px ;margin-left: 80px; margin-right: 90px">
+<a href="show.jsp" style="color: black; text-decoration: none; display:block; text-align: center;" > ShowAllStudent Data </a>
+
+</div>
 
 </body>
 </html>
